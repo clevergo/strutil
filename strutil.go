@@ -4,21 +4,25 @@
 
 package strutil
 
-import "unicode"
+import (
+	"unicode"
+)
 
 // InitialToLower converts initial to lower.
 func InitialToLower(s string) string {
-	for i, v := range s {
-		return string(unicode.ToLower(v)) + s[i+1:]
+	for _, r := range s {
+		u := string(unicode.ToLower(r))
+		return u + s[len(u):]
 	}
 
-	return ""
+	return s
 }
 
 // InitialToUpper converts initial to upper.
 func InitialToUpper(s string) string {
-	for i, v := range s {
-		return string(unicode.ToUpper(v)) + s[i+1:]
+	for _, r := range s {
+		u := string(unicode.ToUpper(r))
+		return u + s[len(u):]
 	}
 
 	return ""

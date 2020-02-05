@@ -17,6 +17,8 @@ func TestInitialToLower(t *testing.T) {
 		{"FOo", "fOo"},
 		{"FoO", "foO"},
 		{"FOO", "fOO"},
+		{"Foo bar", "foo bar"},
+		{"中文", "中文"},
 	}
 
 	for _, test := range tests {
@@ -37,6 +39,8 @@ func TestInitialToUpper(t *testing.T) {
 		{"FOo", "FOo"},
 		{"FoO", "FoO"},
 		{"FOO", "FOO"},
+		{"foo bar", "Foo bar"},
+		{"中文", "中文"},
 	}
 
 	for _, test := range tests {
