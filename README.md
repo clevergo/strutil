@@ -5,3 +5,4 @@
 
 - `InitialToLower`: converts initial to lower case, similar to PHP's `lcfirst`.
 - `InitialToUpper`: converts initial to upper case,  similar to PHP's `ucfirst`.
+- `Random`, `RandomSet`: generates fixed length random string.
