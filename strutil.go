@@ -5,8 +5,14 @@
 package strutil
 
 import (
+	"math/rand"
+	"time"
 	"unicode"
 )
+
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}
 
 // InitialToLower converts initial to lower.
 func InitialToLower(s string) string {
@@ -26,4 +32,20 @@ func InitialToUpper(s string) string {
 	}
 
 	return ""
+}
+
+const defaultRandomSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+// Random generates a fixed length random string from the default random set.
+func Random(length int) string {
+	return RandomSet(length, defaultRandomSet)
+}
+
+// RandomSet generates a fixed length random string from the given set.
+func RandomSet(length int, set string) string {
+	b := make([]byte, length)
+	for i := range b {
+		b[i] = set[rand.Intn(len(set))]
+	}
+	return string(b)
 }

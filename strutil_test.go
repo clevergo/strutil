@@ -4,7 +4,10 @@
 
 package strutil
 
-import "testing"
+import (
+	"strings"
+	"testing"
+)
 
 func TestInitialToLower(t *testing.T) {
 	tests := [][]string{
@@ -46,6 +49,20 @@ func TestInitialToUpper(t *testing.T) {
 	for _, test := range tests {
 		if v := InitialToUpper(test[0]); v != test[1] {
 			t.Errorf("expected %q, got %q", test[1], v)
+		}
+	}
+}
+
+func TestRandom(t *testing.T) {
+	for _, length := range []int{1, 2, 4, 8, 16, 32} {
+		s := Random(length)
+		if len(s) != length {
+			t.Errorf("expected length %d, got %d", length, len(s))
+		}
+		for _, r := range s {
+			if !strings.ContainsRune(defaultRandomSet, r) {
+				t.Errorf("unexpected %s", string(r))
+			}
 		}
 	}
 }
