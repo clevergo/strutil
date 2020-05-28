@@ -1,5 +1,10 @@
 # String utils for golang
-[![Build Status](https://travis-ci.org/clevergo/strutil.svg?branch=master)](https://travis-ci.org/clevergo/strutil) [![Coverage Status](https://coveralls.io/repos/github/clevergo/strutil/badge.svg?branch=master)](https://coveralls.io/github/clevergo/strutil?branch=master)  [![GoDoc](https://img.shields.io/badge/godoc-reference-blue)](https://pkg.go.dev/github.com/clevergo/strutil) [![Go Report Card](https://goreportcard.com/badge/github.com/clevergo/strutil)](https://goreportcard.com/report/github.com/clevergo/strutil) [![Release](https://img.shields.io/github/release/clevergo/strutil.svg?style=flat-square)](https://github.com/clevergo/strutil/releases)
+[![Build Status](https://travis-ci.org/clevergo/strutil.svg?branch=master)](https://travis-ci.org/clevergo/strutil)
+[![Coverage Status](https://coveralls.io/repos/github/clevergo/strutil/badge.svg?branch=master)](https://coveralls.io/github/clevergo/strutil?branch=master)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue)](https://pkg.go.dev/github.com/clevergo/strutil)
+[![Go Report Card](https://goreportcard.com/badge/github.com/clevergo/strutil)](https://goreportcard.com/report/github.com/clevergo/strutil)
+[![Sourcegraph](https://sourcegraph.com/github.com/clevergo/strutil/-/badge.svg)](https://sourcegraph.com/github.com/clevergo/strutil?badge)
+[![Release](https://img.shields.io/github/release/clevergo/strutil.svg?style=flat-square)](https://github.com/clevergo/strutil/releases)
 
 ## Functions
 
