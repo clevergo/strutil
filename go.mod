@@ -1,3 +1,3 @@
-module github.com/clevergo/strutil
+module clevergo.tech/strutil
 
 go 1.13
